@@ -1,0 +1,2 @@
+# Preserve the exact committed bytes on every operating system.
+* -text

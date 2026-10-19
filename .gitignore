@@ -1,0 +1,13 @@
+backups/
+previews/
+preview.jpg
+node_modules/
+__pycache__/
+*.py[cod]
+tools/python-packages/bin/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log

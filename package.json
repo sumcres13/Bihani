@@ -1,0 +1,14 @@
+{
+  "name": "bihani-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BIHANI restaurant website, preserved as a standalone static site",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "start": "node tools/serve.mjs",
+    "build": "node tools/verify.mjs",
+    "test": "node tools/verify.mjs"
+  }
+}

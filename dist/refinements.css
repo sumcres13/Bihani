@@ -1,0 +1,412 @@
+/* Retained template refinements; BIHANI palette overrides follow below. */
+.company-brand .company-title,.footer-brand>a:first-child .company-title{
+ font:600 25px/1.25 "Noto Sans JP",sans-serif;letter-spacing:.01em;font-style:normal;white-space:nowrap
+}
+.company-brand .company-wordmark,.footer-brand>a:first-child .company-wordmark{display:block}
+.company-name-text{font-family:"Noto Sans JP",sans-serif;font-style:normal;font-weight:400}
+.company-brand .company-name-suffix,.footer-brand .company-name-suffix{display:none}
+.language-switch{min-width:112px;height:40px;padding:8px 12px;gap:8px;border:0;border-bottom:1px solid #d3bd99;border-radius:0;background:transparent;color:inherit;box-shadow:none}
+.language-switch:hover{background:#fbf0dd;border-color:#a45b29;box-shadow:none;color:#a45b29}
+.language-switch .language-globe{display:block;width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5}
+.language-switch .language-target{font:500 12px/1.2 var(--sans);margin:0;letter-spacing:.02em}
+.language-switch .language-chevron{margin:0;transition:transform .2s;font-size:13px}
+.language-switch:hover .language-chevron{transform:translate(2px,-2px)}
+.hero-scrim{background:linear-gradient(180deg,rgba(0,0,0,.441),rgba(0,0,0,.371) 42%,rgba(0,0,0,.455))}
+.reservation-background{background-image:linear-gradient(180deg,rgba(0,0,0,.354),rgba(0,0,0,.42)),url("assets/bihani-hero.webp")}
+.booking-intro,.delivery-intro,.reservation-background .section-title{text-shadow:0 2px 10px #000b}
+.about-visual,#about .about-visual{padding:0;margin:0 18px 0 12px;border:0;border-radius:0;background:none;box-shadow:none;isolation:isolate}
+.about-visual>img{border-radius:0;clip-path:polygon(0 0,calc(100% - 28px) 0,100% 28px,100% 100%,28px 100%,0 calc(100% - 28px));object-position:center}
+.about-visual::before{content:"";position:absolute;inset:22px auto 22px -13px;width:6px;background:repeating-linear-gradient(45deg,#a45b29 0 8px,#c89959 8px 11px,#f7f4ec 11px 17px);border:0;z-index:2}
+.about-visual::after{content:"";position:absolute;left:28px;right:-10px;top:15px;bottom:-12px;border:1px solid #b47b43;z-index:-1;pointer-events:none}
+.about-photo-signature{right:18px;bottom:18px;width:88px;height:88px;padding:0;background:none;border:0;border-radius:0;box-shadow:none;backdrop-filter:none}
+.about-photo-signature img{background:none;border:0;border-radius:0;padding:0;filter:none;mix-blend-mode:normal;object-fit:contain}
+.home-store{background:#f7f4ec url("assets/saffron-feast.svg") center/cover no-repeat}
+.values-section{background:#fbf1df url("assets/spice-garland.svg") center/cover no-repeat;border:0}
+.values-section .section-title{background:none}
+.stores-gallery{background:#fbf1df url("assets/copper-spice-gallery.svg") center/cover no-repeat;padding-block:46px}
+.home-store-card{border:1px solid #b47b4340;box-shadow:0 16px 36px #87461c0c}
+.values-section .value-card{background:#fff;border-color:#e6d4b7;box-shadow:0 12px 30px #8b502909}
+.value-card svg{stroke:#b47b43}
+.representative-note{background:linear-gradient(145deg,#fbfaf5,#fcf3e4);border:1px solid #e9d9bc;border-left:3px solid #c8934f;border-top:1px solid #e9d9bc;border-radius:0;box-shadow:0 12px 35px #87461c09}
+.representative-note::before{content:none}
+.representative-note .ceo-message-label{color:#a07849;gap:0}
+.representative-note .ceo-message-label::before{display:none;content:none}
+.representative-note .ceo-catch{color:#8b5029}
+.representative-note .ceo-message{color:#654d3d;border-top-color:#e2cba9}
+.booking-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1000px;margin-inline:auto}
+.booking-card{--action-accent:#b47b43;position:relative;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s,filter .25s}
+.booking-card.tabelog{--action-accent:#d58a12}.booking-card.gurunavi{--action-accent:#bd1515}.booking-card.telephone{--action-accent:#b47b43}
+.booking-card:hover,.booking-card:focus-visible{transform:translateY(-8px) scale(1.018);box-shadow:0 20px 34px #00000052;filter:saturate(1.12)}
+.booking-action{transition:background .2s ease,box-shadow .2s ease;gap:8px}
+.booking-action>span:last-child,.delivery-action>span:last-child{display:inline-block;transition:transform .2s ease}
+.booking-card:hover .booking-action>span:last-child,.booking-card:focus-visible .booking-action>span:last-child,.delivery-card:hover .delivery-action>span:last-child,.delivery-card:focus-visible .delivery-action>span:last-child{transform:translate(3px,-3px)}
+.delivery-card{transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s,filter .25s}
+
+.delivery-card:hover,.delivery-card:focus-visible{transform:translateY(-8px) scale(1.018);box-shadow:0 20px 34px #00000052;filter:saturate(1.12)}
+.booking-card:active,.delivery-card:active{transform:translateY(-1px) scale(.985)}
+.button[href*="reservation"]{transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.button[href*="reservation"]:hover,.button[href*="reservation"]:focus-visible{transform:translateY(-4px);box-shadow:0 8px 20px #0002}
+.button[href*="reservation"]:active{transform:translateY(-1px) scale(.985)}
+.booking-grid.reveal,.delivery-grid.reveal{transition:opacity .58s cubic-bezier(.22,.72,.24,1),transform .58s cubic-bezier(.22,.72,.24,1)}
+.gallery-autoplay{position:absolute;z-index:5;right:18px;bottom:14px;padding:7px 10px;border:1px solid #ffffff80;background:#81512ccf;color:white;border-radius:3px;font:500 11px/1.4 var(--sans);cursor:pointer;min-height:34px}
+.gallery-autoplay:hover{background:#a45b29}.gallery-slide{transition:opacity .65s ease}
+.gallery-arrow{background:#81512caa}
+.gallery-slide::after{background:linear-gradient(transparent,#3e2113b8)}
+.location-section.section-pad{padding-block:42px 48px}
+.location-intro p{margin-bottom:20px}
+.map-card{width:min(100%,1160px);padding:10px;border-radius:15px}
+.map-card .map-frame{height:clamp(350px,34vw,480px);border-radius:8px}
+@media(max-width:760px){
+ .company-brand .company-title,.footer-brand>a:first-child .company-title{font-size:21px}
+ .language-switch{min-width:103px;height:38px;padding:7px 8px;gap:7px}
+ #about .about-visual{width:calc(100% - 26px);margin:0 auto 35px}
+ .about-photo-signature{right:12px;bottom:12px;width:75px;height:75px}
+ .home-store{background-size:auto 100%;background-position:center}
+ .values-section{background-size:auto 100%}.stores-gallery{background-size:auto 100%;padding-block:38px}
+ .booking-grid{grid-template-columns:1fr;max-width:420px;gap:14px}
+ .booking-grid .booking-card{width:100%;min-height:220px;grid-column:auto}
+ .booking-grid.reveal,.delivery-grid.reveal{transform:translateY(12px);transition-duration:.46s}
+ .booking-grid.reveal.is-visible,.delivery-grid.reveal.is-visible{transform:none}
+ .gallery-autoplay{bottom:9px;right:10px;font-size:10px;padding:5px 7px}
+ .stores-gallery .gallery-stage{aspect-ratio:4/3}
+ .stores-gallery .gallery-slide img{object-fit:contain;object-position:center}
+ .stores-gallery .gallery-slide>span{left:12px;right:auto;bottom:12px;transform:none;width:auto;max-width:calc(100% - 112px);margin:0;text-align:left;font-size:clamp(11px,3vw,13px);line-height:1.65;letter-spacing:.025em;color:#fff;text-shadow:0 1px 3px #000d,0 2px 8px #0009}
+ .stores-gallery .gallery-dots{left:auto;right:12px;bottom:52px;transform:none}
+ .location-section.section-pad{padding-block:30px 38px}
+ .map-card{padding:7px}.map-card .map-frame{height:340px}
+}
+@media(prefers-reduced-motion:reduce){
+ .booking-card,.delivery-card,.booking-action,.booking-action>span,.delivery-action>span,.gallery-slide,.button[href*="reservation"],.language-chevron,.booking-grid.reveal,.delivery-grid.reveal{transition:none;animation:none}
+ .booking-card:hover,.delivery-card:hover,.button[href*="reservation"]:hover{transform:none}
+}
+@media(max-width:360px){
+ .company-brand .company-title{font-size:18px}.header-inner{gap:8px}.header-actions{gap:4px}
+ .language-switch{min-width:88px;padding-inline:5px;gap:5px}.language-switch .language-target{font-size:11px}
+ .menu-toggle{width:36px;padding-inline:7px}
+}
+
+/* Diagonal white sheen, following the reference card animation. No hover color fill. */
+.booking-card,.delivery-card,.button[href*="reservation"]{position:relative;overflow:hidden;isolation:isolate}
+.booking-card::before,.delivery-card::before,.button[href*="reservation"]::before{position:absolute;z-index:5;top:0;left:-120%;width:70%;height:100%;content:"";pointer-events:none;background:linear-gradient(110deg,transparent,rgba(255,255,255,.5),transparent);transform:skew(-22deg);transition:left .55s ease}
+.booking-card:is(:hover,:focus-visible)::before,.delivery-card:is(:hover,:focus-visible)::before,.button[href*="reservation"]:is(:hover,:focus-visible)::before{left:150%}
+.booking-card:hover .booking-action,.delivery-card:hover .delivery-action{letter-spacing:.02em}
+.button.button-primary[href*="reservation"]:hover{background:var(--orange)}
+#location-title{font-size:clamp(1.6rem,3vw,2.7rem)}
+@media(max-width:760px){
+ .home-store{background-image:url("assets/saffron-feast-mobile.svg");background-size:100% 100%}
+ .values-section{background-image:url("assets/spice-garland-mobile.svg");background-size:100% 100%}
+ .stores-gallery{background-size:auto 100%}
+ #location-title{font-size:clamp(1.45rem,6vw,2rem)}
+}
+@media(prefers-reduced-motion:reduce){
+ .booking-card::before,.delivery-card::before,.button[href*="reservation"]::before{display:none;transition:none}
+ .booking-card:is(:hover,:focus-visible),.delivery-card:is(:hover,:focus-visible),.button[href*="reservation"]:is(:hover,:focus-visible){transform:none;filter:none}
+}
+
+/* BIHANI: teal table linen, ivory plaster, honey-colored timber. */
+:root{
+ --teal:#1d5a55;--ivory:#f6f0e4;--honey:#c99546;
+ --cream:var(--ivory);--paper:#fffcf6;--ink:var(--teal);--ink-deep:#123d39;
+ --orange:var(--teal);--gold:var(--honey);--text:#263f3c;--muted:#596d66;--line:#d9d8c9
+}
+body{background:var(--ivory);color:var(--text)}
+:focus-visible{outline-color:var(--honey)}
+.site-header{color:var(--paper)}
+.site-header.is-scrolled,.site-header.menu-open,body:not([data-page="home"]) .site-header{background:var(--ivory);color:var(--teal);box-shadow:0 1px 0 #1d5a5522}
+.site-header .mobile-nav{background:var(--ivory)}
+.company-brand .company-title,.footer-brand>a:first-child .company-title{font:600 28px/1.1 Georgia,serif;letter-spacing:.14em}
+.company-brand .company-title::after{content:"INDIAN & NEPALI CUISINE";display:block;margin-top:6px;font:500 8px/1.2 var(--sans);letter-spacing:.17em}
+.desktop-nav a[aria-current="page"]{color:inherit;box-shadow:0 2px 0 var(--honey)}
+.language-switch{border:1px solid #c9954660;border-radius:30px;background:var(--paper);color:var(--teal);min-width:112px}
+.language-switch::before{display:none}
+.language-switch:hover{background:#ede5d5;color:var(--teal);border-color:var(--honey)}
+.hero-image{background-image:url("assets/bihani-hero.webp");background-position:center;animation:none}
+#home{height:100vh;height:100dvh;min-height:100vh;min-height:100dvh;max-height:none}
+#home .hero-image{transform-origin:50% 45%;animation:bihaniHeroKenBurns 24s linear 0s infinite alternate}
+@keyframes bihaniHeroKenBurns{from{transform:scale(1)}to{transform:scale(1.085)}}
+.hero-scrim{background:linear-gradient(180deg,#0c242176,#0c24218a 45%,#0c2421a8)}
+.hero h1{font-size:clamp(2.4rem,5.2vw,5.1rem);line-height:1.4;letter-spacing:.035em}
+.hero-title-accent{color:#efd39f}
+html:lang(ja) .hero h1>span{text-indent:0}
+.hero-ending{font-style:normal;white-space:nowrap}
+.hero-punctuation{display:inline-block;inline-size:.5em;font-style:normal;letter-spacing:0;text-align:left;text-indent:0}
+.hero-copy{max-width:720px;text-wrap:pretty}
+.hero-buttons .button-primary,.button-dark{background:var(--teal);color:var(--paper);text-shadow:none;border:1px solid #f6f0e45c}
+.hero-buttons .button-primary:hover,.button-dark:hover{background:#123d39;color:var(--paper)}
+.button.button-primary[href*="reservation"]:hover{background:#123d39}
+.button-reservation{background:var(--ivory);color:var(--teal)}
+.button-reservation:hover{background:#ebdfc7}
+#about,.representative,.company-section,.store.section-pad,.location-section{background:var(--paper)}
+.about-visual::before{background:repeating-linear-gradient(45deg,var(--teal) 0 8px,var(--honey) 8px 11px,var(--ivory) 11px 17px)}
+.about-visual::after{border-color:var(--honey)}
+.about-photo-signature{width:88px;height:88px}
+.about-photo-signature img{width:100%;height:100%}
+.home-store,.values-section,.stores-gallery{background-color:var(--ivory);background-image:none}
+.home-store{background-image:radial-gradient(ellipse at top left,#c9954618,transparent 55%)}
+.home-store-card{border:1px solid #c9954660;box-shadow:0 15px 45px #123d3910}
+.home-store-card-header{background:var(--paper);border-color:var(--line)}
+.home-store-card-content{background:var(--paper)}
+.home-store-feature{border-color:var(--line)}
+.home-store-feature::before{background:var(--honey)}
+.home-store-feature p{color:var(--muted)}
+.home-store-photo img{object-position:center;object-fit:cover}
+.store-wordmark,.home-store-card-header>.store-wordmark,.store-identity>.store-wordmark{width:86px;height:86px}
+.home-reservation{background-image:url("assets/bihani-hero.webp")}
+.home-reservation::before{background:#123d39d9}
+.sns-band{background-image:url("assets/bihani-interior-2.webp");border-color:var(--honey)}
+.sns-band .sns-backdrop{background:linear-gradient(90deg,rgba(21,68,63,.94) 0%,rgba(13,43,39,.86) 45%,rgba(0,0,0,.92) 100%)}
+.sns-backdrop{background:linear-gradient(90deg,#123d39ed,#123d39b5)}
+.sns-inner h2{white-space:normal}
+.site-footer{background:var(--teal);border-top:3px solid var(--honey);color:var(--ivory)}
+.footer-grid h2,.footer-bottom a{color:#efd39f}
+.footer-brand p{color:var(--ivory)}
+.footer-bottom{color:#e1e9de;border-color:#f6f0e42b}
+.footer-grid>div:nth-child(2)>a{display:block;overflow-wrap:anywhere}
+.footer-nav a:hover,.footer-grid>div:nth-child(2)>a:hover{color:#efd39f}
+.subhero-about{background-image:url("assets/bihani-interior-2.webp");background-position:center}
+.subhero-stores{background-image:url("assets/bihani-exterior.jpg");background-position:center 40%}
+.subhero-about .subhero-overlay,.subhero-stores .subhero-overlay{background:linear-gradient(180deg,#123d397a,#123d39c7)}
+.representative-profile>img{height:auto;max-height:620px;aspect-ratio:2/3;object-fit:cover;object-position:center top}
+.representative-profile p{color:var(--muted)}
+.representative-profile h2{font:500 17px/1.5 var(--sans);color:var(--teal)}
+.representative-note{background:var(--ivory);border:1px solid #c995464f;border-left:3px solid var(--honey);box-shadow:0 12px 35px #123d3908;aspect-ratio:auto;min-height:0}
+.representative-note .ceo-message-label{color:var(--teal)}
+.representative-note .ceo-catch{color:var(--teal)}
+.representative-note .ceo-message{color:var(--text);border-color:#c9954660;line-height:2.05}
+.values-section .value-card{background:var(--paper);border-color:#c995464f;box-shadow:none}
+.value-card svg{stroke:var(--teal)}
+.company-table{background:var(--ivory);border:1px solid #c9954660;border-top:3px solid var(--honey);box-shadow:none}
+.company-table div{border-color:var(--line)}
+.company-table a{overflow-wrap:anywhere}
+.store-grid{background:var(--ivory);border:1px solid #c9954640}
+.store-image{position:relative;min-height:480px}
+.store-image>img{object-fit:contain;object-position:center;background:#ebe6da}
+.store-details dl div{padding-block:12px;font-size:13px}
+.store-details dl{border-color:var(--line)}
+.gallery-arrow,.gallery-autoplay{background:#123d39d9}
+.gallery-autoplay:hover,.gallery-arrow:hover{background:var(--teal);color:var(--paper)}
+.gallery-dots button.is-active{background:transparent}
+.gallery-slide::after{background:linear-gradient(transparent,#123d39bf)}
+.gallery-dots button{display:grid;place-items:center;width:24px;height:24px;min-height:24px;padding:0;border:0;border-radius:50%;background:transparent;background-clip:border-box;cursor:pointer}
+.gallery-dots button::before{content:"";display:block;width:7px;height:7px;border-radius:50%;background:#fff;opacity:.55;box-shadow:0 1px 4px #0008;transition:opacity .2s,transform .2s}
+.gallery-dots button.is-active::before{opacity:1;transform:scale(1.15)}
+.gallery-dots button:is(:hover,:focus-visible)::before{opacity:1}
+.gallery-dots button:focus-visible{outline:2px solid #fff;outline-offset:-1px}
+.map-card{background:var(--ivory);border-color:#c9954680;box-shadow:0 12px 35px #123d3912}
+.map-card .map-frame{border-color:var(--line)}
+.reservation-background{background-image:linear-gradient(180deg,#123d39e8,#123d39db),url("assets/bihani-hero.webp")}
+.booking-card{--action-accent:var(--teal)}
+.booking-card.telephone{border-color:var(--honey)}
+.booking-card.telephone .booking-action{background:var(--teal);color:var(--paper)}
+.booking-logo.phone-symbol{color:var(--teal);background:var(--ivory)}
+.booking-card,.delivery-card{box-shadow:0 8px 24px #123d3933}
+.booking-card::before,.delivery-card::before,.button[href*="reservation"]::before{pointer-events:none}
+@media(max-width:900px){
+ .header-inner{justify-content:space-between}
+ .company-brand{position:static;transform:none}
+ .header-actions{position:static}
+}
+@media(max-width:760px){
+ .site-header{background:var(--ivory);color:var(--teal)}
+ .header-inner{gap:12px;justify-content:space-between}
+ .company-brand .company-title{font-size:23px;letter-spacing:.1em}
+ .company-brand .company-title::after{font-size:6px;letter-spacing:.08em}
+ .header-actions{gap:5px!important}
+ .language-switch{min-width:98px;gap:6px;padding-inline:8px}
+ .hero{min-height:650px}
+ .hero h1{font-size:clamp(27px,6.4vw,46px);letter-spacing:0}
+ html:lang(ja) .hero h1>span{white-space:normal;text-indent:0;overflow-wrap:anywhere}
+ .hero-center{min-width:0;max-width:100%}
+ #about-title .about-heading-line{white-space:normal}
+ .hero-copy{max-width:370px;line-height:1.9}
+ .hero-content{padding-top:115px}
+ .about-grid{grid-template-columns:1fr}
+ .home-store,.values-section,.stores-gallery{background-image:none}
+ .representative-profile>img{width:100%;height:auto;aspect-ratio:2/3;max-height:none}
+ .representative-profile{max-width:280px}
+ .representative-note .ceo-message{font-size:14px;text-align:left}
+ .booking-grid{grid-template-columns:1fr;max-width:420px}
+ .booking-grid .booking-card{width:100%;grid-column:auto;min-height:220px}
+ .delivery-card{flex-direction:row;justify-content:space-between;gap:12px}
+ .delivery-logo{margin:0}
+ .store-image{min-height:0;height:auto;aspect-ratio:1293/1034}
+ .store-image>img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+ .store-details dl div{grid-template-columns:1fr;gap:4px}
+ .store-details dt{font-size:12px;color:var(--muted)}
+ .gallery-stage{aspect-ratio:4/3}
+ .stores-gallery .gallery-slide img{object-fit:contain}
+ .gallery-autoplay{bottom:10px;right:10px;font-size:10px}
+ .gallery-slide span{font-size:12px}
+ .footer-grid{gap:28px}
+ .footer-bottom{flex-direction:column;gap:9px}
+}
+@media(prefers-reduced-motion:reduce){#home .hero-image{animation:none!important;transform:none}}
+
+/* Owner-requested refinements, October 19. */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.site-header,.site-header.is-scrolled,.site-header.menu-open,body:not([data-page="home"]) .site-header{background:#fff;color:var(--teal);box-shadow:0 1px 0 #1d5a551a}
+.site-header .mobile-nav{background:#fff}
+.company-brand{display:block;flex:none}
+.company-brand .brand-logo-text{display:block;width:146px;height:60px;object-fit:contain}
+.desktop-nav a{padding:7px 10px;transition:color .2s,background .2s,box-shadow .2s}
+.desktop-nav a:hover,.desktop-nav a:focus-visible,.mobile-nav a:hover{color:var(--teal);background:#1d5a5510;box-shadow:inset 0 -2px 0 var(--teal)}
+.language-switch{display:flex;align-items:center;justify-content:center;gap:9px;min-width:78px;height:36px;padding:5px 3px;border:0;border-radius:0;background:transparent;color:var(--teal);box-shadow:none}
+.language-switch::before{display:none}
+.language-switch:hover{background:transparent;color:var(--teal);box-shadow:none}
+.language-switch .language-option{display:inline-block;width:auto;height:auto;margin:0;padding:3px 0;border-radius:0;font:500 12px/1.3 var(--sans);letter-spacing:.06em;color:#64736d;opacity:1;background:transparent;box-shadow:none;border-bottom:1px solid transparent}
+.language-divider{font:400 12px/1 var(--sans);color:#b2bbb4}
+.language-switch.is-en .language-en,.language-switch:not(.is-en) .language-ja{font-weight:700;color:var(--teal);background:transparent;box-shadow:none;border-bottom-color:var(--teal);text-decoration:none}
+.language-switch:hover .language-option{color:var(--teal)}
+.hero-scrim{background:linear-gradient(180deg,rgba(0,0,0,.344),rgba(0,0,0,.40) 45%,rgba(0,0,0,.496))}
+.hero-buttons .button{border-radius:0;min-width:205px;justify-content:center;gap:24px}
+.about-visual,#about .about-visual{margin:0;padding:0;border:0;border-radius:6px;background:#fff;box-shadow:0 12px 32px #123d3914;overflow:hidden;isolation:auto}
+.about-visual::before,.about-visual::after{display:none;content:none}
+.about-visual>img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;clip-path:none;border-radius:0}
+.home-store,.values-section{background-color:var(--ivory);background-image:url("assets/bihani-culinary-edges.svg");background-size:100% 100%;background-repeat:no-repeat;background-position:center}
+.home-store-card{position:relative;z-index:1}
+.home-store-card-header{min-height:110px}
+.home-store-card-header>.store-wordmark{width:176px;height:92px;aspect-ratio:auto;max-height:none;object-fit:contain;background:none;border-radius:0;padding:0}
+.home-store-card-header .store-kicker{font-size:12px;letter-spacing:.14em;margin:0}
+.home-reservation::before{background:rgba(0,0,0,.62)}
+.sns-backdrop{background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.58))}
+.site-footer{position:relative;background:radial-gradient(ellipse at 5% 0,#397c6b80,transparent 55%),linear-gradient(115deg,#123d39 0%,#1d5a55 53%,#102f2c 100%);border-top:3px solid var(--honey)}
+.footer-brand .brand-logo-text{width:205px;height:84px;object-fit:contain;filter:invert(1)}
+.footer-brand p{margin-top:18px}
+.subhero-about .subhero-overlay,.subhero-stores .subhero-overlay{background:linear-gradient(180deg,#0006,#0009)}
+.representative-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:stretch}
+.representative-profile{position:relative;align-self:stretch;min-height:0;max-width:none;width:auto;margin:0;overflow:hidden;border-radius:4px}
+.representative-profile>img{position:absolute;inset:0;width:100%;height:100%;min-height:0;max-height:none;aspect-ratio:auto;object-fit:cover;object-position:center 25%}
+.representative-note{align-self:stretch;width:100%;max-width:none;min-height:0;margin:0;padding:clamp(28px,3vw,42px);justify-content:center}
+.representative-note .ceo-message-label{margin-bottom:18px;font-size:11px}
+.representative-note .ceo-catch,html:lang(en) .representative-note .ceo-catch{font:600 clamp(25px,2.2vw,34px)/1.45 var(--serif);letter-spacing:.025em;margin:0 0 20px;color:var(--teal)}
+html:lang(en) .representative-note .ceo-catch{font-family:var(--company-font);font-style:normal;font-size:clamp(29px,2.5vw,37px);letter-spacing:0}
+.representative-note .ceo-message{font-size:15px;line-height:1.95;padding-top:20px;border-top-color:var(--honey)}
+.values-section{position:relative;margin-top:0;padding-top:65px;overflow:visible;border:0}
+.values-section::before{content:"";display:block;position:absolute;left:0;right:0;top:0;width:100%;height:28px;transform:none;border:0;border-radius:0;box-shadow:none;background:url("assets/bihani-wave.svg") center/100% 100% no-repeat;pointer-events:none}
+.values-section::after{display:none;content:none}
+.values-section .value-card{background:#fffcf6f5}
+.value-card:nth-child(1) svg{stroke:#e9be19}
+.value-card:nth-child(2) svg{stroke:#b5453d}
+.value-card:nth-child(3) svg{stroke:#376d9a}
+.company-table{background:#fcf9f1}
+.company-table .brand-logo-text{width:112px;height:46px;object-fit:contain}
+.store-image>img{object-fit:cover;object-position:50% 46%;background:none}
+.store-identity>.store-wordmark{width:210px;height:110px;aspect-ratio:auto;object-fit:contain;background:none;border:0;border-radius:0;padding:0;margin:0 auto 14px}
+.store-identity p{margin-top:0}
+.store-details .button-dark{border-radius:0;justify-content:center;text-align:center;min-width:210px;gap:0}
+.stores-gallery .gallery-heading h2::after,.location-intro .section-title::after{background:var(--honey)}
+.section-title::after{background:var(--honey)}
+.gallery-slide::after{display:none;content:none;background:none}
+.gallery-slide>span{background:#000a;padding:6px 10px;text-shadow:none;font-size:14px;border-radius:2px}
+.gallery-autoplay,.gallery-arrow{background:#000c;color:#fff}
+.gallery-autoplay:hover,.gallery-arrow:hover{background:#000;color:#fff}
+.location-intro .access-directions{max-width:700px;margin:14px auto 0;font:400 14px/1.95 var(--sans);color:var(--muted);text-wrap:pretty}
+.reservation-background{background-image:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.43)),url("assets/bihani-hero.webp")}
+.booking-section>.container>.section-title{font-size:clamp(2.2rem,3.7vw,3.3rem);line-height:1.45}
+@media(max-width:1100px) and (min-width:901px){.desktop-nav{gap:6px}.desktop-nav a{padding-inline:6px}.company-brand .brand-logo-text{width:126px}}
+@media(max-width:760px){
+ .company-brand .brand-logo-text{width:112px;height:46px}
+ .language-switch{min-width:66px;gap:7px}
+ .language-switch .language-option{font-size:11px}
+ .hero-buttons .button{min-width:0;flex:1;max-width:210px;gap:12px;border-radius:0;padding-inline:13px;min-height:50px}
+ .hero-buttons{max-width:430px;margin-inline:auto}
+ .about-visual,#about .about-visual{width:100%;margin:0 auto 12px}
+ .home-store,.values-section{background-image:url("assets/bihani-culinary-edges.svg");background-size:100% 100%}
+ .home-store-card-header{min-height:95px}
+ .home-store-card-header>.store-wordmark{width:146px;height:76px}
+ .representative-grid{grid-template-columns:1fr;gap:24px}
+ .representative-profile{width:min(100%,340px);min-height:0;aspect-ratio:3/4;margin-inline:auto}
+ .representative-profile>img{position:absolute;height:100%;aspect-ratio:auto;object-position:center 23%}
+ .representative-note{padding:28px 24px}
+ .representative-note .ceo-catch{font-size:26px;line-height:1.4}
+ html:lang(en) .representative-note .ceo-catch{font-size:30px}
+ .representative-note .ceo-message{font-size:14px;line-height:1.95}
+ .values-section{padding-top:45px}
+ .store-image{aspect-ratio:1293/1034;height:auto;min-height:0}
+ .store-image>img{object-fit:cover;object-position:center}
+ .store-identity>.store-wordmark{width:185px;height:96px}
+ .store-details .button-dark{margin-inline:auto}
+ .stores-gallery .gallery-slide>span{font-size:11px;line-height:1.6;padding:5px 7px}
+ .location-intro .access-directions{font-size:13px;line-height:1.9}
+ .booking-section>.container>.section-title{font-size:clamp(1.9rem,7.5vw,2.6rem)}
+ .footer-brand .brand-logo-text{margin-inline:auto;width:185px;height:76px}
+ .subhero-content h1{font-size:clamp(28px,7.2vw,42px);letter-spacing:.025em}
+}
+
+/* Second review: stronger controls and shop-inspired photo treatments. */
+:root{--bright-green:#3fe28c;--button-orange:#e7792b;--bright-orange:#f5842b}
+.site-header{transition:background .3s ease,color .3s ease,box-shadow .3s ease}
+.company-brand .brand-logo-text{transition:filter .3s ease}
+body[data-page="home"] .site-header:not(.is-scrolled):not(.menu-open){background:transparent;color:#fff;box-shadow:none}
+body[data-page="home"] .site-header:not(.is-scrolled):not(.menu-open) .brand-logo-text{filter:invert(1)}
+.site-header .desktop-nav a,.site-header .desktop-nav a[aria-current="page"],.site-header .mobile-nav a{box-shadow:none;border:0;text-decoration:none;text-shadow:none;background:transparent;border-radius:5px;transition:color .2s ease,text-shadow .2s ease}
+.site-header .desktop-nav a::after,.site-header .mobile-nav a::after{display:none;content:none}
+.site-header .desktop-nav a:is(:hover,:focus-visible),.site-header .mobile-nav a:is(:hover,:focus-visible){background:transparent;color:var(--bright-green);text-shadow:0 0 5px #3fe28c55,0 0 13px #3fe28c66,0 0 23px #3fe28c33;box-shadow:none;text-decoration:none}
+.site-header .desktop-nav a[aria-current="page"]{font-weight:700}
+.language-switch{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;gap:0;width:106px;min-width:106px;height:42px;padding:4px;border:1px solid #1d5a5533;border-radius:9px;background:#eff5ef;color:var(--teal);box-shadow:0 3px 8px #123d390a;cursor:pointer;overflow:hidden;transition:transform .2s,border-color .2s,background .2s,box-shadow .2s}
+.language-switch::before{content:"";display:block;position:absolute;z-index:0;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);height:auto;border:0;border-radius:5px;background:var(--teal);box-shadow:0 2px 5px #123d3926;transform:none;transition:transform .24s cubic-bezier(.2,.8,.2,1),background .2s}
+.language-switch.is-en::before{transform:translateX(100%)}
+.language-switch .language-segment{position:relative;z-index:1;display:grid;place-items:center;margin:0;padding:0;width:auto;font:600 11px/1 var(--sans);letter-spacing:.06em;border:0;color:#506b60;transition:color .2s}
+.language-switch:not(.is-en) .language-ja,.language-switch.is-en .language-en{color:#fff;border:0;background:none;box-shadow:none;text-decoration:none}
+.language-switch:hover{transform:translateY(-1px);border-color:#27bb70;background:#e7f5ec;color:var(--teal);box-shadow:0 5px 13px #1d5a5518}
+.language-switch:active{transform:translateY(0) scale(.97)}
+body[data-page="home"] .site-header:not(.is-scrolled):not(.menu-open) .language-switch{background:#ffffff18;border-color:#ffffff70;color:#fff;box-shadow:none}
+body[data-page="home"] .site-header:not(.is-scrolled):not(.menu-open) .language-switch::before{background:#fff}
+body[data-page="home"] .site-header:not(.is-scrolled):not(.menu-open) .language-segment{color:#fff}
+body[data-page="home"] .site-header:not(.is-scrolled):not(.menu-open) .language-switch:not(.is-en) .language-ja,body[data-page="home"] .site-header:not(.is-scrolled):not(.menu-open) .language-switch.is-en .language-en{color:var(--teal)}
+body[data-page="home"] .site-header:not(.is-scrolled):not(.menu-open) .language-switch:hover{background:#ffffff26;border-color:var(--bright-green)}
+.hero-buttons .button{gap:0}
+.about-copy .text-link,.button.button-reservation{display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:53px;padding:14px 27px;border:0;border-radius:0;background:var(--button-orange);color:#fff;text-decoration:none;font:700 13px/1.5 var(--sans);box-shadow:none;transition:background .2s,transform .2s,box-shadow .2s}
+.about-copy .text-link:hover,.button.button-reservation:hover{background:#d76a23;color:#fff;transform:translateY(-2px);box-shadow:0 7px 18px #e7792b24}
+.home-store-feature::before{background:var(--bright-orange)}
+.home-store-card-header{justify-content:center;padding-block:12px}
+#about .about-grid{width:min(100% - 8vw,1320px);grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:clamp(40px,5vw,80px)}
+.about-visual,#about .about-visual{position:relative;isolation:isolate;width:100%;margin:0;padding:0;border:0;border-radius:0;background:none;box-shadow:0 14px 32px #123d3914;overflow:visible}
+.about-visual::before,.about-visual::after{content:"";display:block;position:absolute;z-index:0;inset:auto;width:60px;height:60px;border:0;border-radius:0;background:none;pointer-events:none}
+.about-visual::before{top:-10px;left:-10px;border-top:1px solid #1d5a5570;border-left:1px solid #1d5a5570}
+.about-visual::after{right:-10px;bottom:-10px;border-right:1px solid #1d5a5570;border-bottom:1px solid #1d5a5570}
+#about .about-visual>img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;border-radius:0;clip-path:none}
+.representative-note{position:relative;isolation:isolate;padding:clamp(30px,3vw,45px);background:#fffdf7;border:1px solid #d9e3d6;border-left:1px solid #d9e3d6;border-radius:12px 12px 36px 12px;box-shadow:0 15px 34px #123d3910;overflow:hidden}
+.representative-note::before{content:"";display:block;position:absolute;z-index:0;top:0;right:0;width:42px;height:42px;background:linear-gradient(225deg,#e5eddf 0 49%,#f7f9f1 50% 53%,transparent 54%);opacity:1;pointer-events:none}
+.representative-note .ceo-message-label{align-self:flex-start;padding:6px 11px;border-radius:4px;background:#f8e9d7;color:#a64419;font-size:10px;letter-spacing:.12em}
+.representative-note .ceo-catch{margin-bottom:22px}
+.representative-note .ceo-message{padding-top:0;border:0}
+.owner-attribution{position:relative;display:flex;flex-direction:column;align-items:flex-end;gap:4px;margin-top:23px;padding-top:17px;border-top:1px solid #1d5a5520;text-align:right}
+.owner-attribution span{font:400 12px/1.6 var(--sans);color:var(--muted);letter-spacing:.05em}
+.owner-attribution strong{font:500 20px/1.6 var(--serif);color:var(--teal)}
+.company-name-text{font:400 15px/1.8 var(--sans)}
+.location-intro p.access-directions:not(.eyebrow){max-width:680px;margin:12px auto 0;text-align:center;font:400 13px/1.95 var(--sans);letter-spacing:.01em;color:var(--muted);text-wrap:pretty}
+.stores-gallery{background:var(--ivory) url("assets/bihani-culinary-edges.svg") center/100% 100% no-repeat;padding-block:60px}
+.gallery-frame{position:relative;width:min(100% - 8vw,1100px);margin:auto;padding:18px;background:#fffcf6;border:1px solid #c995465c;border-bottom:6px solid var(--teal);border-radius:22px 22px 8px 8px;box-shadow:0 18px 40px #123d3915}
+.gallery-frame::before,.gallery-frame::after{content:"";position:absolute;z-index:6;width:30px;height:30px;pointer-events:none;border-color:var(--honey);border-style:solid}
+.gallery-frame::before{top:8px;left:8px;border-width:2px 0 0 2px;border-radius:13px 0 0 0}
+.gallery-frame::after{top:8px;right:8px;border-width:2px 2px 0 0;border-radius:0 13px 0 0}
+.gallery-frame .gallery-stage{width:100%;margin:0;aspect-ratio:16/8.5;border-radius:8px 8px 2px 2px}
+.gallery-frame .gallery-dots{left:50%;right:auto;bottom:10px;transform:translateX(-50%);gap:2px}
+@media(max-width:1100px) and (min-width:901px){.language-switch{width:96px;min-width:96px}}
+@media(max-width:760px){
+ .language-switch{width:90px;min-width:90px;height:38px;gap:0;padding:4px}
+ .language-switch .language-segment{font-size:10px}
+ #about .about-grid{width:calc(100% - 38px);max-width:620px;grid-template-columns:1fr;gap:32px}
+ .about-visual,#about .about-visual{padding:0;border-radius:0}
+ .about-visual::before,.about-visual::after{width:36px;height:36px}
+ .representative-note{padding:29px 23px;border-radius:10px 10px 28px 10px}
+ .owner-attribution span{font-size:11px}
+ .owner-attribution strong{font-size:18px}
+ .location-intro p.access-directions:not(.eyebrow){font-size:12px;line-height:1.9;max-width:100%}
+ .stores-gallery{background-image:url("assets/bihani-culinary-edges.svg");padding-block:42px}
+ .gallery-frame{width:calc(100% - 34px);padding:10px;border-radius:14px 14px 6px 6px}
+ .gallery-frame::before,.gallery-frame::after{width:21px;height:21px;top:5px}
+ .gallery-frame::before{left:5px}.gallery-frame::after{right:5px}
+ .gallery-frame .gallery-stage{width:100%;aspect-ratio:4/3;border-radius:5px}
+}
+@media(prefers-reduced-motion:reduce){.language-switch,.language-switch::before,.language-segment,.site-header,.company-brand .brand-logo-text,.about-copy .text-link,.button.button-reservation{transition:none}.language-switch:hover,.language-switch:active,.about-copy .text-link:hover,.button.button-reservation:hover{transform:none}}
+html:lang(ja) #about p[data-budoux="always"] .budoux-phrase{white-space:nowrap}
+p[data-budoux="mobile"] .budoux-break{display:none}
+@media(max-width:760px){
+ .sns-band .sns-backdrop{background:rgba(0,0,0,.55)}
+ #home .hero-buttons .button-primary{background:#35786e}
+ #home .hero-buttons .button-primary:hover,#home .hero-buttons .button-primary:focus-visible{background:#2c695f}
+ html:lang(ja) .home-store-feature p[data-budoux="mobile"] .budoux-phrase{white-space:nowrap}
+ html:lang(ja) .home-store-feature p[data-budoux="mobile"] .budoux-break{display:inline}
+}
